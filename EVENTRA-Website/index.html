@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EVENTRA | Discover Your Next Experience</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">
+            EVENTRA<span>.</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#events" class="nav-button">Explore Events <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <span class="hero-label">
+                <i class="fa-solid fa-star"></i>
+                YOUR NEXT EXPERIENCE STARTS HERE
+            </span>
+
+            <h1>
+                Life is better<br>
+                when you <span>experience</span><br>
+                more.
+            </h1>
+
+            <p>
+                Discover unforgettable events, connect with people
+                and create memories that last forever.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#events" class="primary-btn">
+                    Explore Events <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#about" class="secondary-btn">
+                    Discover More
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <h3>500+</h3>
+                    <p>Events</p>
+                </div>
+
+                <div>
+                    <h3>10K+</h3>
+                    <p>Happy Visitors</p>
+                </div>
+
+                <div>
+                    <h3>50+</h3>
+                    <p>Cities</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hero-floating-card">
+            <div class="live-dot"></div>
+            <span>UPCOMING HIGHLIGHT</span>
+            <h3>Music & Magic Festival</h3>
+            <p><i class="fa-solid fa-calendar"></i> December 15, 2026</p>
+            <p><i class="fa-solid fa-location-dot"></i> Chennai, India</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EVENT SECTION -->
+
+<section class="events-section section-padding" id="events">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-tag">DISCOVER EXPERIENCES</span>
+                <h2>Find your next <span>adventure.</span></h2>
+                <p>Handpicked experiences waiting for you.</p>
+            </div>
+
+            <div class="event-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput"
+                    placeholder="Search events...">
+            </div>
+        </div>
+
+
+        <!-- CATEGORY FILTERS -->
+
+        <div class="filter-buttons">
+
+            <button class="filter-btn active" data-category="all">All Events</button>
+
+            <button class="filter-btn" data-category="music">Music</button>
+
+            <button class="filter-btn" data-category="technology">Technology</button>
+
+            <button class="filter-btn" data-category="art">Art & Culture</button>
+
+            <button class="filter-btn" data-category="workshop">Workshops</button>
+
+        </div>
+
+
+        <!-- EVENT CARDS -->
+
+        <div class="row g-4" id="eventContainer"></div>
+
+        <p id="noResults" class="no-results" hidden>
+            No events found. Try another search!
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+
+<section class="about-section section-padding" id="about">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=900"
+                        alt="People enjoying an event">
+
+                    <div class="about-badge">
+                        <h3>100%</h3>
+                        <p>Experience focused</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <span class="section-tag">WHY EVENTRA?</span>
+
+                <h2 class="about-title">
+                    More than events.<br>
+                    <span>It's about moments.</span>
+                </h2>
+
+                <p class="about-description">
+                    We believe the best memories happen when people
+                    come together. EVENTRA makes discovering and
+                    experiencing amazing events easier than ever.
+                </p>
+
+                <div class="feature">
+                    <i class="fa-solid fa-ticket"></i>
+                    <div>
+                        <h4>Easy Booking</h4>
+                        <p>Find and reserve your favourite experiences easily.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div>
+                        <h4>Trusted Experiences</h4>
+                        <p>Explore carefully selected event experiences.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-heart"></i>
+                    <div>
+                        <h4>Made for Memories</h4>
+                        <p>Discover new interests and connect with people.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section class="steps-section section-padding">
+
+    <div class="container">
+
+        <div class="center-heading">
+            <span class="section-tag">SIMPLE PROCESS</span>
+            <h2>Your next experience in <span>3 steps.</span></h2>
+        </div>
+
+        <div class="row g-4 mt-3">
+
+            <div class="col-md-4">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <i class="fa-solid fa-compass"></i>
+                    <h3>Discover</h3>
+                    <p>Explore exciting events based on your interests.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <i class="fa-solid fa-ticket"></i>
+                    <h3>Book</h3>
+                    <p>Choose your event and reserve your tickets.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <i class="fa-solid fa-face-smile"></i>
+                    <h3>Experience</h3>
+                    <p>Show up, enjoy the moment and create memories.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TESTIMONIALS -->
+
+<section class="reviews-section section-padding" id="reviews">
+
+    <div class="container">
+
+        <div class="center-heading">
+            <span class="section-tag">COMMUNITY LOVE</span>
+            <h2>Experiences worth <span>sharing.</span></h2>
+        </div>
+
+        <div class="row g-4 mt-3">
+
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        "The booking process was so simple!
+                        I discovered an amazing music festival."
+                    </p>
+                    <h4>Priya S.</h4>
+                    <small>Event Enthusiast</small>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        "A wonderful platform to discover
+                        interesting workshops and conferences."
+                    </p>
+                    <h4>Arun K.</h4>
+                    <small>Technology Professional</small>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        "Found some beautiful cultural events
+                        that I would never have known about!"
+                    </p>
+                    <h4>Divya M.</h4>
+                    <small>Travel & Art Lover</small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- NEWSLETTER -->
+
+<section class="newsletter-section">
+
+    <div class="container">
+
+        <div class="newsletter-content">
+
+            <span class="section-tag">STAY IN THE LOOP</span>
+
+            <h2>Don't miss your next <span>big moment.</span></h2>
+
+            <p>Get exciting event updates delivered to your inbox.</p>
+
+            <form id="newsletterForm" class="newsletter-form">
+
+                <input type="email" id="newsletterEmail"
+                    placeholder="Enter your email address" required>
+
+                <button type="submit">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact-section section-padding" id="contact">
+
+    <div class="container">
+
+        <div class="center-heading">
+            <span class="section-tag">GET IN TOUCH</span>
+            <h2>Let's create something <span>memorable.</span></h2>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+
+            <div class="row g-3">
+
+                <div class="col-md-6">
+                    <input type="text" id="contactName"
+                        placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6">
+                    <input type="email" id="contactEmail"
+                        placeholder="Your Email" required>
+                </div>
+
+                <div class="col-12">
+                    <textarea id="contactMessage"
+                        placeholder="Write your message..." rows="5"
+                        required></textarea>
+                </div>
+
+                <div class="col-12 text-center">
+                    <button class="primary-btn" type="submit">
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-5">
+
+                <a class="footer-brand" href="#home">EVENTRA<span>.</span></a>
+
+                <p>
+                    Discover amazing experiences, connect with people
+                    and make every moment count.
+                </p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+                <h4>Explore</h4>
+                <a href="#home">Home</a>
+                <a href="#events">Events</a>
+                <a href="#about">About Us</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+
+            <div class="col-lg-4">
+                <h4>Contact</h4>
+                <p><i class="fa-solid fa-envelope"></i> hello@eventra.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Chennai, India</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 EVENTRA. All rights reserved. Designed with creativity.</p>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- BOOKING MODAL -->
+
+<div class="modal-overlay" id="bookingModal">
+
+    <div class="booking-box">
+
+        <button class="modal-close" id="closeModal">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <span class="section-tag">RESERVE YOUR EXPERIENCE</span>
+
+        <h2 id="bookingTitle">Book Your Tickets</h2>
+
+        <p id="bookingDetails"></p>
+
+        <form id="bookingForm">
+
+            <input type="text" id="bookingName"
+                placeholder="Your Full Name" required>
+
+            <input type="email" id="bookingEmail"
+                placeholder="Email Address" required>
+
+            <label for="ticketQuantity">Number of tickets</label>
+
+            <input type="number" id="ticketQuantity"
+                min="1" max="10" value="1" required>
+
+            <h3 id="bookingTotal">Total: ₹0</h3>
+
+            <button type="submit" class="primary-btn">
+                Confirm Booking
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- TOAST -->
+
+<div id="toast" class="toast"></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
